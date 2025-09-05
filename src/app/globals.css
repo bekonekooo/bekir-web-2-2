@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* ------- Tema (Tailwind v4) ------- */
+@theme {
+  /* Renk paleti */
+  --color-brand-50:  #f2f7ff;
+  --color-brand-100: #e6f0ff;
+  --color-brand-200: #c7dbff;
+  --color-brand-300: #a7c6ff;
+  --color-brand-400: #79a8ff;
+  --color-brand-500: #4b8aff; /* ana */
+  --color-brand-600: #2f6df0;
+  --color-brand-700: #2456c4;
+  --color-brand-800: #1b4096;
+  --color-brand-900: #142e6e;
+
+  /* Gölge ve radius */
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.06);
+  --radius-2xl: 1rem;
+}
+
+/* Küresel davranış */
+html, body { scroll-behavior: smooth; }
+
+/* ------- Yardımcı (utility) sınıflar ------- */
+/* v4'te @apply kullanılabilir */
+.container-max { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.card         { @apply rounded-2xl bg-white shadow-[var(--shadow-soft)] border border-gray-100; }
+.link {
+  @apply text-zinc-700 hover:text-yellow-600 transition-colors duration-200 font-medium;
+}
+.btn {
+  @apply inline-flex items-center justify-center gap-2
+         px-5 py-2.5 rounded-xl font-medium
+         bg-gradient-to-b from-gray-800 to-gray-900 text-white
+         shadow-md shadow-black/10
+         hover:from-gray-900 hover:to-black
+         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300
+         active:translate-y-[1px]
+         disabled:opacity-50 disabled:pointer-events-none
+         transition-[transform,box-shadow,background-color] duration-200;
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium
+         border border-brand-200 text-brand-700 hover:bg-brand-50 transition-colors;
+}
+
+/* (İsteğe bağlı) Tipografi ve küçük dokunuşlar */
+.prose h3 { @apply text-xl font-semibold; }
