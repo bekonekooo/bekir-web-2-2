@@ -1,5 +1,6 @@
+"use client "
 export default function StatsStrip() {
- export const dict = {
+  const dict = {
   tr: {
     home: "Ana Sayfa",
     about: "Hakkımızda",
