@@ -55,19 +55,21 @@ export default function ServicesSlider() {
   const { locale } = useCountry();
   const t = dict[locale] || dict.en;
 
-  const [i, setI] = useState(0);
-
-  // Dil değişince ilk slayta dön
-  useEffect(() => {
-    setI(0);
-  }, [locale]);
+  const [slide, setSlide] = useState({ locale, index: 0 });
+  const i = slide.locale === locale ? slide.index : 0;
 
   // Otomatik geçiş (dil veya eleman sayısı değişince yeniden kur)
   useEffect(() => {
     const len = t.items.length;
-    const id = setInterval(() => setI((p) => (p + 1) % len), 4000);
+    const id = setInterval(() => {
+      setSlide((current) => ({
+        locale,
+        index:
+          ((current.locale === locale ? current.index : 0) + 1) % len,
+      }));
+    }, 4000);
     return () => clearInterval(id);
-  }, [t.items]);
+  }, [locale, t.items]);
 
   return (
     <div key={locale} className="card p-6 md:p-8">
@@ -77,7 +79,7 @@ export default function ServicesSlider() {
           {t.items.map((_, idx) => (
             <button
               key={idx}
-              onClick={() => setI(idx)}
+              onClick={() => setSlide({ locale, index: idx })}
               className={`h-2 w-2 rounded-full ${i === idx ? "bg-brand-600" : "bg-gray-300"}`}
               aria-label={`slide ${idx + 1}`}
               aria-current={i === idx ? "true" : "false"}

@@ -34,6 +34,8 @@ export function CountryProvider({ children }) {
           : null;
 
       const initial = fromCookie || fromStorage || DEFAULT_CODE;
+      // Client preference is only available after the server-rendered page hydrates.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCountry(initial);
     } catch (_) {}
   }, []);
