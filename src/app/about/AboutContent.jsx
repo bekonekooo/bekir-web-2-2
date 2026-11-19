@@ -28,7 +28,7 @@ const dict = {
     chip: "Hakkımızda",
     heroTitle: "Mühendislik, şeffaflık ve güven üzerine kurulu bir yolculuk.",
     heroDesc:
-      "ACME Endüstriyel; ithalat, ihracat, üretim ve danışmanlıkta uçtan uca değer sunar. Kalite, hız ve açık iletişim bizim iş yapış kültürümüzdür.",
+      "GLOBAL ORIENT; ithalat, ihracat, üretim ve danışmanlıkta uçtan uca değer sunar. Kalite, hız ve açık iletişim bizim iş yapış kültürümüzdür.",
     stats: [
       { k: "12+", v: "Yıl deneyim" },
       { k: "250+", v: "Tamamlanan proje" },
@@ -72,7 +72,7 @@ const dict = {
     chip: "About",
     heroTitle: "A journey built on engineering, transparency, and trust.",
     heroDesc:
-      "ACME Industrial delivers end-to-end value in import, export, manufacturing and consulting. Quality, speed and open communication define our culture.",
+      "GLOBAL ORIENT delivers end-to-end value in import, export, manufacturing and consulting. Quality, speed and open communication define our culture.",
     stats: [
       { k: "12+", v: "Years of experience" },
       { k: "250+", v: "Projects completed" },
@@ -116,7 +116,7 @@ const dict = {
     chip: "Über uns",
     heroTitle: "Eine Reise, gegründet auf Technik, Transparenz und Vertrauen.",
     heroDesc:
-      "ACME Industrial liefert End-to-End-Mehrwert in Import, Export, Fertigung und Beratung. Qualität, Tempo und offene Kommunikation prägen unsere Kultur.",
+      "GLOBAL ORIENT liefert End-to-End-Mehrwert in Import, Export, Fertigung und Beratung. Qualität, Tempo und offene Kommunikation prägen unsere Kultur.",
     stats: [
       { k: "12+", v: "Jahre Erfahrung" },
       { k: "250+", v: "Abgeschlossene Projekte" },
@@ -160,7 +160,7 @@ const dict = {
     chip: "À propos",
     heroTitle: "Un voyage fondé sur l’ingénierie, la transparence et la confiance.",
     heroDesc:
-      "ACME Industrial offre une valeur de bout en bout dans l’import, l’export, la fabrication et le conseil. La qualité, la rapidité et la communication ouverte définissent notre culture.",
+      "GLOBAL ORIENT offre une valeur de bout en bout dans l’import, l’export, la fabrication et le conseil. La qualité, la rapidité et la communication ouverte définissent notre culture.",
     stats: [
       { k: "12+", v: "Années d’expérience" },
       { k: "250+", v: "Projets réalisés" },
@@ -204,7 +204,7 @@ const dict = {
     chip: "Sobre nosotros",
     heroTitle: "Un viaje basado en la ingeniería, la transparencia y la confianza.",
     heroDesc:
-      "ACME Industrial ofrece valor integral en importación, exportación, fabricación y consultoría. La calidad, la rapidez y la comunicación abierta definen nuestra cultura.",
+      "GLOBAL ORIENT ofrece valor integral en importación, exportación, fabricación y consultoría. La calidad, la rapidez y la comunicación abierta definen nuestra cultura.",
     stats: [
       { k: "12+", v: "Años de experiencia" },
       { k: "250+", v: "Proyectos completados" },
@@ -248,7 +248,7 @@ const dict = {
     chip: "О нас",
     heroTitle: "Путь, основанный на инженерии, прозрачности и доверии.",
     heroDesc:
-      "ACME Industrial предоставляет комплексные решения в области импорта, экспорта, производства и консалтинга. Качество, скорость и открытость — основа нашей культуры работы.",
+      "GLOBAL ORIENT предоставляет комплексные решения в области импорта, экспорта, производства и консалтинга. Качество, скорость и открытость — основа нашей культуры работы.",
     stats: [
       { k: "12+", v: "Лет опыта" },
       { k: "250+", v: "Реализованных проектов" },

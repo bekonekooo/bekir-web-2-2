@@ -3,12 +3,7 @@ export default function SEO() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "GLOBAL ORIENT",
-    url: "https://www.ornek.com",
     logo: "/logo.svg",
-    sameAs: [
-      "https://www.linkedin.com/company/ornek",
-      "https://twitter.com/ornek"
-    ],
     description: "Endüstriyel ekipman ithalat, ihracat, üretim ve danışmanlık."
   };
   return (
